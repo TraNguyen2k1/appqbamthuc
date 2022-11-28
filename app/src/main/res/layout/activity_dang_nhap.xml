@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1ad11"
+    tools:context=".ActivityDangNhap">
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/background_dangnhap_dangky"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/logoapp"
+        />
+
+    <TextView
+        android:id="@+id/su"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+
+        />
+
+    <EditText
+        android:id="@+id/editt_tendangnhap"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/background_edittext"
+        android:hint="e-mail"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/su"
+
+        />
+
+    <EditText
+        android:id="@+id/editt_passdangnhap"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/background_edittext"
+        android:hint="password"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/su" />
+
+    <TextView
+        android:id="@+id/quenpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Forgot Password?"
+        android:textColor="#d7443d"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/editt_passdangnhap"
+        app:layout_constraintTop_toBottomOf="@id/buttondangnhap" />
+
+    <TextView
+        android:id="@+id/txtdangky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Bạn chưa có tài khoản"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quenpass" />
+
+    <TextView
+        android:id="@+id/dangky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Đăng ký ngay"
+        android:textColor="#d7443d"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@id/quenpass"
+        app:layout_constraintTop_toBottomOf="@id/quenpass"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/buttondangnhap"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/background_button"
+        android:gravity="center"
+        android:text="Đăng nhập"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editt_passdangnhap" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/item_mon_an"
+    android:layout_margin="10dp"
+    >
+    <ImageView
+        android:id="@+id/img_item_monan_tk"
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="25dp"
+        android:src="#f1ad11"
+        />
+    <TextView
+        android:id="@+id/_tk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Tên bài viết"
+        app:layout_constraintStart_toEndOf="@+id/img_item_monan_tk"
+        android:textSize="20dp"
+        android:layout_marginStart="10dp"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
