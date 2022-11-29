@@ -5,17 +5,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnhome,btntimkiem,btnthembai,btntaikhoan;
+    TextView btnhome,btntimkiem,btnthembai,btntaikhoan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        addControls();
-        addEvents();
+       //addControls();
+        //addEvents();
     }
     private void addControls() {
         btnhome.findViewById(R.id.btnhome);
