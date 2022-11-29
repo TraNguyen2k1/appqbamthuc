@@ -8,6 +8,7 @@
     tools:context=".ActivityDangNhap">
 
     <TextView
+        android:id="@+id/nen"
         android:layout_width="320dp"
         android:layout_height="400dp"
         android:layout_marginTop="90dp"
@@ -45,14 +46,14 @@
         android:id="@+id/editt_tendangnhap"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/background_edittext"
         android:hint="e-mail"
         android:paddingStart="15dp"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/su"
+        app:layout_constraintEnd_toEndOf="@id/nen"
+        app:layout_constraintStart_toStartOf="@id/nen"
+        app:layout_constraintTop_toTopOf="@+id/nen"
 
         />
 
@@ -60,39 +61,28 @@
         android:id="@+id/editt_passdangnhap"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/background_edittext"
         android:hint="password"
         android:paddingStart="15dp"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/su" />
+        app:layout_constraintEnd_toEndOf="@id/nen"
+        app:layout_constraintStart_toStartOf="@id/nen"
+        app:layout_constraintTop_toBottomOf="@id/editt_tendangnhap" />
+
 
     <TextView
-        android:id="@+id/quenpass"
+        android:id="@+id/tvdangky"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="Forgot Password?"
-        android:textColor="#d7443d"
-        android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/editt_passdangnhap"
-        app:layout_constraintTop_toBottomOf="@id/buttondangnhap" />
-
-    <TextView
-        android:id="@+id/txtdangky"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="65dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="Bạn chưa có tài khoản"
         android:textColor="@color/black"
         android:textSize="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/quenpass" />
+        app:layout_constraintStart_toStartOf="@id/nen"
+        app:layout_constraintTop_toBottomOf="@id/buttondangnhap" />
 
     <TextView
         android:id="@+id/dangky"
@@ -102,9 +92,10 @@
         android:text="Đăng ký ngay"
         android:textColor="#d7443d"
         android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="@id/quenpass"
-        app:layout_constraintTop_toBottomOf="@id/quenpass"
+        app:layout_constraintTop_toBottomOf="@id/buttondangnhap"
+        app:layout_constraintStart_toEndOf="@id/tvdangky"
         android:layout_marginTop="16dp"
+        android:layout_marginStart="5dp"
         />
 
     <TextView
@@ -118,8 +109,8 @@
         android:textColor="@color/white"
         android:textSize="25dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/nen"
+        app:layout_constraintStart_toStartOf="@id/nen"
         app:layout_constraintTop_toBottomOf="@id/editt_passdangnhap" />
 
 

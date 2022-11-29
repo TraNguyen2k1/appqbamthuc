@@ -49,33 +49,34 @@
        />
    <LinearLayout
        android:layout_width="match_parent"
-       android:layout_height="wrap_content"
+       android:layout_height="55dp"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintBottom_toBottomOf="parent"
        android:layout_marginBottom="5dp"
        android:orientation="horizontal"
+       android:gravity="center"
+       android:background="#f1ad11"
        >
       <TextView
           android:id="@+id/btnhome"
           android:layout_width="50dp"
           android:layout_height="50dp"
           android:background="@drawable/home"
-          android:layout_marginStart="30dp"
           />
       <TextView
           android:id="@+id/btntimhome"
           android:layout_width="50dp"
           android:layout_height="50dp"
           android:background="@drawable/tim"
-          android:layout_marginStart="40dp"
+          android:layout_marginStart="30dp"
           />
       <TextView
           android:id="@+id/btnThemBai"
           android:layout_width="50dp"
           android:layout_height="50dp"
           android:background="@drawable/add"
-          android:layout_marginStart="40dp"
-         />
+          android:layout_marginStart="30dp"
+          />
       <TextView
           android:id="@+id/btntaikoan"
           android:layout_width="50dp"

@@ -6,36 +6,106 @@
     android:layout_height="match_parent"
     tools:context=".ActivityDangBai">
 
+<ImageView
+    android:id="@+id/img_dangbai"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:backgroundTint="#D3CFCF"
+
+    />
+    <TextView
+        android:id="@+id/btn_themhinh_db"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/anh"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_themhinh_db"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    >
+    <EditText
+        android:id="@+id/txtTenmon"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Tên món"
+        android:textColorHint="#f1ad11"
+
+        />
+    <EditText
+        android:id="@+id/txttheloai"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Thể loại"
+        android:textColorHint="#f1ad11"
+        />
+    <EditText
+        android:id="@+id/txtmota"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Mô tả"
+        android:textColorHint="#f1ad11"
+        />
+    <EditText
+        android:id="@+id/txtnguyenlieu"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Nguyên liệu"
+        android:textColorHint="#f1ad11"
+        />
+    <EditText
+        android:id="@+id/txtcachlam"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Cách làm"
+        android:textColorHint="#f1ad11"
+
+        />
 
 
+</LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="5dp"
         android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#f1ad11"
         >
         <TextView
             android:id="@+id/btnhome"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/home"
-            android:layout_marginStart="30dp"
             />
         <TextView
             android:id="@+id/btntimhome"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/tim"
-            android:layout_marginStart="40dp"
+            android:layout_marginStart="30dp"
             />
         <TextView
             android:id="@+id/btnThemBai"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/add"
-            android:layout_marginStart="40dp"
+            android:layout_marginStart="30dp"
             />
         <TextView
             android:id="@+id/btntaikoan"
