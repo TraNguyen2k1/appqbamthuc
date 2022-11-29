@@ -115,4 +115,18 @@
             android:layout_marginStart="40dp"
             />
     </LinearLayout>
+   <TextView
+       android:id="@+id/btndangbai_db"
+       android:layout_width="100dp"
+       android:layout_height="35dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:layout_marginBottom="100dp"
+       android:background="@drawable/background_btn_xuly"
+       android:text="ĐĂNG BÀI"
+       android:textColor="@color/white"
+       android:gravity="center"
+
+       />
 </androidx.constraintlayout.widget.ConstraintLayout>
