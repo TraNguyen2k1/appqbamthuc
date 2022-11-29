@@ -26,6 +26,10 @@ TextView btnDN;
         addEnvent();
     }
 
+
+
+
+
     private void addEnvent() {
         btnDN.setOnClickListener(v -> {
             serviceApi.api.dangnhap(tendn.getText().toString(),mk.getText().toString()).enqueue(new Callback<Boolean>() {
