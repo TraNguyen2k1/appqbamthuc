@@ -26,7 +26,6 @@ TextView btndk;
         mk=findViewById(R.id.editt_passdndangky);
         btndk=findViewById(R.id.buttondangky);
         addControl();
-
     }
     private void addControl() {
      btndk.setOnClickListener(v -> {
@@ -36,21 +35,20 @@ TextView btndk;
                  try{
                      Boolean result = response.body();
                      if(result==true){
-                         Toast.makeText(ActivityDangKy.this,"thanh cong",Toast.LENGTH_SHORT).show();
-
+                         Intent i = new Intent(ActivityDangKy.this,MainActivity.class);
+                         startActivity(i);
+                         Toast.makeText(ActivityDangKy.this,"dang nhap thanh cong",Toast.LENGTH_SHORT).show();
                      }
                      else {
-                         Toast.makeText(ActivityDangKy.this,"that bai",Toast.LENGTH_SHORT).show();
+                         Toast.makeText(ActivityDangKy.this,"that bai 1",Toast.LENGTH_SHORT).show();
                      }
                  }catch (Exception  ex){
-
-                     Intent i = new Intent(ActivityDangKy.this,MainActivity.class);
-                     startActivity(i);
+                     Toast.makeText(ActivityDangKy.this,"that bai 2",Toast.LENGTH_SHORT).show();
                  }
              }
              @Override
              public void onFailure(Call<Boolean> call, Throwable t) {
-                     Toast.makeText(ActivityDangKy.this,"that bai 1",Toast.LENGTH_SHORT).show();
+                     Toast.makeText(ActivityDangKy.this,"that bai 3",Toast.LENGTH_SHORT).show();
              }
          });
      });
